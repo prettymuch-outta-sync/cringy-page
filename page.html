@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For You 🐾</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffccff, #cc99ff);
+      color: #222;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    img {
+      width: 250px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.3em;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+    .hug-button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #ff85d1;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hug-button:hover {
+      background-color: #e765b4;
+    }
+    #hugMessage {
+      margin-top: 20px;
+      font-size: 1.2em;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Oi Youuu</h1>
+  <p>
+    I know you've been busy a lot lately — moving, cleaning, dealing with the heat and everything else.
+    Just wanted to say... I’m <strong>really proud of you</strong>. You’re doing amazing, even when you don’t feel like it.
+    So here’s a little calm vibe. And my teeny tiny love.<br>**avg engineer lol**❤️ 
+  </p>
+  <button class="hug-button" onclick="showHug()">Click for a virtual hug</button>
+  <div id="hugMessage">**a tight n gentle hug** you got thiss, I'm here for you (if you want lol).</div>
+
+  <script>
+    function showHug() {
+      document.getElementById("hugMessage").style.display = "block";
+    }
+  </script>
+</body>
+</html>
